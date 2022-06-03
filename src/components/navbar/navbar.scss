@@ -8,13 +8,19 @@
   height: 6vw;
   gap: 1vw;
 
+  .navbar-title {
+    color: white;
+  }
+
   .navbar-tabs-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 2vw;
 
-    .navbar-tabs {
+    .navbar-contact-tab,
+    .navbar-projects-tab,
+    .navbar-home-tab {
       font-size: 1.6vw;
       color: white;
     }
