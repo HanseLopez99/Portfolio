@@ -1,12 +1,18 @@
+@import '/src/theme/_mixin.scss';
+
 .navbar {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background: linear-gradient(110.33deg, #2C1658 0%, #141414 60.58%, #2C1658 113.12%);
   width: 100%;
-  height: 6vw;
+  height: 5.03vw;
   gap: 1vw;
+
+  @include respond-to(phone_portrait) {
+    height: 21.03vw;
+  }
 
   .navbar-title {
     color: white;
@@ -18,10 +24,14 @@
     justify-content: space-around;
     gap: 2vw;
 
+    @include respond-to(phone_portrait) {
+      gap: 3vw;
+    }
+
     .navbar-contact-tab,
     .navbar-projects-tab,
     .navbar-home-tab {
-      font-size: 1.6vw;
+      font-size: 3.21vh;
       color: white;
     }
   }

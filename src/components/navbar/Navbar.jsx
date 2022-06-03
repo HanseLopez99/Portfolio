@@ -17,7 +17,6 @@ const Navbar = () => {
       <div className="navbar-tabs-container">
         <div className="navbar-home-tab" onClick={() => redirectTo('')}>Home</div>
         <div className="navbar-projects-tab" onClick={() => redirectTo('projects')}>Projects</div>
-        <div className="navbar-contact-tab">Contact</div>
       </div>
     </div>
   )

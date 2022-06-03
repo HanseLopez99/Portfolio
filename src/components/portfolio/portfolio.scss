@@ -1,14 +1,68 @@
 @import '/src/theme/_mixin.scss';
 
-.portfolio-projects {
+.home {
+  width: calc(100% - 4em);
+  margin: 4em auto;
   display: flex;
   flex-direction: column;
-  margin: 2vw;
 
-}
+  @include respond-to(phone_portrait) {
+    width: calc(100% - 4em);
+    padding: 0em 1em;
+    height: auto;
+  }
 
-.home-title {
-  font-size: 2.4vw;
-  color: black;
-  margin: 2vw;
+  @include respond-to(tablet_portrait) {
+    padding: 0em 1em;
+    width: calc(100% - 4em);
+  }
+
+  @include respond-to(desktop) {
+    width: 70vw;
+  }
+
+  @include respond-to(phone_landscape) {
+    padding: 0em 1em;
+    width: calc(100% - 4em);
+  }
+
+  &>* {
+    width: 100%;
+  }
+
+  .home-title {
+    font-size: 2.4vw;
+    color: black;
+    margin: 2vw;
+    font-weight: bold;
+
+    @include respond-to(phone_portrait) {
+      font-size: 7.4vw;
+      margin: 7vw;
+    }
+  }
+
+  .profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include respond-to(phone_portrait) {
+      flex-direction: column;
+    }
+
+    .profile-img {
+      width: 394px;
+      height: 447px;
+      margin: 2vw;
+      margin-top: 0vw;
+    }
+
+    .profile-description-title {
+      word-break: keep-all;
+      text-align: justify;
+      font-size: 1.2rem;
+    }
+  }
+
 }

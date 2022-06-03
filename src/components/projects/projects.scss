@@ -1,0 +1,45 @@
+@import '/src/theme/_mixin.scss';
+
+.portfolio-projects {
+  width: calc(100% - 4em);
+  display: flex;
+  flex-direction: column;
+  margin: 2vw;
+  width: 100%;
+  text-align: center;
+
+  @include respond-to(phone_portrait) {
+    width: calc(100% - 4em);
+    padding: 0em 1em;
+    height: auto;
+  }
+
+  @include respond-to(tablet_portrait) {
+    padding: 0em 1em;
+    width: calc(100% - 4em);
+  }
+
+  @include respond-to(phone_landscape) {
+    padding: 0em 1em;
+    width: calc(100% - 4em);
+  }
+
+  &>* {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 3vw;
+    padding-top: 8vw;
+
+    @include respond-to(phone_portrait) {
+      font-size: 7vw;
+      padding-top: 7vw;
+    }
+  }
+
+  img {
+    width: 80vw;
+    height: 39vw;
+  }
+}

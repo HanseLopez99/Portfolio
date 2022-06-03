@@ -2,6 +2,10 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react'
 import './projects.scss'
+import iphoneImg from '../../assets/images/iphone.png'
+import chatImg from '../../assets/images/chat.png'
+import gameImg from '../../assets/images/game.png'
+import calculatorImg from '../../assets/images/calculator.png'
 
 const Projects = () => {
   const urls = {
@@ -20,7 +24,7 @@ const Projects = () => {
       <div className="portfolio-project-iphone-css">
         <h2>Iphone css</h2>
         <img
-          src="https://via.placeholder.com/300x200"
+          src={iphoneImg}
           alt="project"
           onClick={() => goTo(urls['iphone-css'])}
         />
@@ -28,7 +32,7 @@ const Projects = () => {
       <div className="portfolio-project-iphone-css">
         <h2>Javascript Chat</h2>
         <img
-          src="https://via.placeholder.com/300x200"
+          src={chatImg}
           alt="project"
           onClick={() => goTo(urls['javascript-chat'])}
         />
@@ -36,7 +40,7 @@ const Projects = () => {
       <div className="portfolio-project-iphone-css">
         <h2>The murderer of the town! game</h2>
         <img
-          src="https://via.placeholder.com/300x200"
+          src={gameImg}
           alt="project"
           onClick={() => goTo(urls['online-game'])}
         />
@@ -44,7 +48,7 @@ const Projects = () => {
       <div className="portfolio-project-iphone-css">
         <h2>Calculator</h2>
         <img
-          src="https://via.placeholder.com/300x200"
+          src={calculatorImg}
           alt="project"
           onClick={() => goTo(urls.calculator)}
         />
