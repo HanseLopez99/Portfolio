@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react'
 import './portfolio.scss'
-import profileImg from '../../assets/images/profile.png'
+import profileImg from '../../assets/images/profile.jpg'
 
 const Portfolio = () => (
   <div className="home">
