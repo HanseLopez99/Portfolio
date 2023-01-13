@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react'
 import './projects.scss'
 import iphoneImg from '../../assets/images/iphone.png'
@@ -21,37 +19,45 @@ const Projects = () => {
 
   return (
     <div className="portfolio-projects">
-      <div className="portfolio-project-iphone-css">
+      <div
+        className="portfolio-project-iphone-css"
+        role="button"
+        onClick={() => goTo(urls['iphone-css'])}
+        onKeyDown={() => goTo(urls['iphone-css'])}
+        tabIndex={0}
+      >
         <h2>Iphone css</h2>
-        <img
-          src={iphoneImg}
-          alt="project"
-          onClick={() => goTo(urls['iphone-css'])}
-        />
+        <img src={iphoneImg} alt="project" />
       </div>
-      <div className="portfolio-project-iphone-css">
+      <div
+        className="portfolio-project-iphone-css"
+        onClick={() => goTo(urls['javascript-chat'])}
+        role="button"
+        tabIndex={0}
+        onKeyDown={() => goTo(urls['javascript-chat'])}
+      >
         <h2>Javascript Chat</h2>
-        <img
-          src={chatImg}
-          alt="project"
-          onClick={() => goTo(urls['javascript-chat'])}
-        />
+        <img src={chatImg} alt="project" />
       </div>
-      <div className="portfolio-project-iphone-css">
+      <div
+        className="portfolio-project-iphone-css"
+        onClick={() => goTo(urls['online-game'])}
+        role="button"
+        tabIndex={0}
+        onKeyDown={() => goTo(urls['online-game'])}
+      >
         <h2>The murderer of the town! game</h2>
-        <img
-          src={gameImg}
-          alt="project"
-          onClick={() => goTo(urls['online-game'])}
-        />
+        <img src={gameImg} alt="project" />
       </div>
-      <div className="portfolio-project-iphone-css">
+      <div
+        className="portfolio-project-iphone-css"
+        onClick={() => goTo(urls.calculator)}
+        role="button"
+        tabIndex={0}
+        onKeyDown={() => goTo(urls.calculator)}
+      >
         <h2>Calculator</h2>
-        <img
-          src={calculatorImg}
-          alt="project"
-          onClick={() => goTo(urls.calculator)}
-        />
+        <img src={calculatorImg} alt="project" />
       </div>
     </div>
   )
